@@ -5,7 +5,7 @@ const themeToggle = document.querySelector("#themeButton");
 // Apply Dark theme
 const enableDark = () => {
   document.body.classList.add("darktheme");
-  localStorage.setItem("darkTheme", "enabled");
+  localStorage.setItem("darkTheme", "disabled");
   themeToggle.innerHTML = `<i id="themeButton__icon" data-feather="sun"></i>`;
   feather.replace();
 };
@@ -35,10 +35,10 @@ themeToggle.addEventListener("click", () => {
 });
 
 
-const today = new Date();
-
-if (hour >= 19 || hour < 5) {
-    enableDark();
-} else {
-    disableDark();
-}
+// const today = new Date();
+//
+// if (hour >= 19 || hour < 5) {
+//     enableDark();
+// } else {
+//     disableDark();
+// }
