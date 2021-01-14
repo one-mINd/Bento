@@ -20,9 +20,9 @@ const disableDark = () => {
 
 //Toggle theme
 if (darkTheme === "enabled") {
-  enableDark();
-} else {
   disableDark();
+} else {
+  enableDark();
 }
 
 themeToggle.addEventListener("click", () => {
@@ -34,7 +34,6 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-enableDark();
 
 // const today = new Date();
 //
