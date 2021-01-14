@@ -18,12 +18,14 @@ const disableDark = () => {
   feather.replace();
 };
 
+enableDark();
+
 //Toggle theme
-if (darkTheme === "enabled") {
-  disableDark();
-} else {
-  enableDark();
-}
+// if (darkTheme === "enabled") {
+//   enableDark();
+// } else {
+//   disableDark();
+// }
 
 themeToggle.addEventListener("click", () => {
   darkTheme = localStorage.getItem("darkTheme");
